@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Murillo Productions</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<img src="images/favicon.ico" alt="Art and Style Logo" height="80">
+		<h2>Art and Style by <em>Murillo Productions</em></h2>
+		<h3><span class="shadow">Murillo Productions Portfolio</span></h3>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html" class="current">Home</a></li>
+			<li><a href="workspage.html">Works</a></li>
+			<li><a href="previousclientspage.html">Previous Clients</a></li>
+			<li><a class="lastitem" href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<img src="images/lesson-at-art.jpg" alt="Art Studio">
+			<h1>Welcome to the website of <em>Murillo Productions!</em></h1>
+			<article>
+			<p>Explore our portfolio showcasing the diverse artwork and designs created by our talented team. We offer a wide range of creative options from logo design to fine art.</p>
+			<p>Additionally, we provide networking opportunities for aspiring artists and art students, supported by experienced senior staff from The University of the Arts.</p>
+			<P>Our mission is to introduce fresh, innovative creations to the world, driven by the dedication and passion of our artists.</P>
+		</article>
+		</section>
+		<aside>
+			<h2>Our founders.</h2>
+			<ul>
+				<li><a href="#">José Murillo</a></li>
+				<li><a href="#">Camilla Murillo</a></li>
+			</ul>
+			<h2>Our leading staff.</h2>
+			<ul>
+				<li><a href="#">Andrew Romero</a></li>
+				<li><a href="#">Sarah Miller</a></li>
+				<li><a href="#">Amelia Grant</a></li>
+				<li><a href="#">Fred Neal</a></li>
+				<li><a href="#">Jacob Bowers</a></li>
+			</ul>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; Murillo Productions, 2024</p>
+	</footer>
+</body>
+</html>

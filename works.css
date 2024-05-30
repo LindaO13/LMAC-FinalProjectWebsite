@@ -1,0 +1,198 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: beige;
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 90%;
+    margin: 0 auto;
+	border: 3px solid #d9b99b;
+	background-color: bisque;
+}
+a {font-weight: bold;}
+a:link {
+	color: #6b0000;
+	text-decoration: none;
+}
+a:focus, a:hover {
+	font-style: italic;
+	transition: 1.5s ease;
+	box-shadow: inset 200em 0 0 0 #d9b99b,
+	inset 20em 0 0 0 #e4d5b7,
+	inset 20em 0 0 0 #eed9c4,
+	inset 20em 0 0 0 #faf0e6;
+}
+/* the styles for the header */
+header {
+	padding: 1.5% 0 2% 0;
+	border-bottom: 3px solid #d9b99b;
+	background-image: -moz-linear-gradient(
+		30deg, #ff9b19 0%, #fae279 30%, white 50%, #fae279 80%, #ff9b19 100%
+	);
+	background-image: -webkit-linear-gradient(
+		30deg, #ff9b19 0%, #fae279 30%, white 50%, #fae279 80%, #ff9b19 100%
+	);
+	background-image: -o-linear-gradient(
+		30deg, #ff9b19 0%, #fae279 30%, white 50%, #fae279 80%, #ff9b19 100%
+	);
+	background-image: linear-gradient(
+		30deg, #ff9b19 0%, #fae279 30%, white 50%, #fae279 80%, #ff9b19 100%
+	);
+}
+@font-face {
+	font-family: Murillo Productions Portfolio;
+	src: url("TCBI____.TTF");
+}
+header h2 {
+	font-size: 175%;
+}
+header h3 {
+	font-size: 165%;
+	font-family: Murillo Productions Portfolio;
+}
+header img {
+	float: left;
+	padding: 0 1%;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #d9b99b;
+}
+/* the styles for the navigation menu */
+#nav_menu {
+	border-bottom: 3px solid #d9b99b;
+}
+#nav_menu ul {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-around;
+	list-style-type: none;
+	position: relative;
+}
+#nav_menu ul li {
+	flex-basis: 25%;
+}
+#nav_menu ul li a {
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+    text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+#nav_menu a.current {
+	color: #6b0000;
+	background-color: #d9b99b;
+}
+/* the styles for the main content */
+main {
+	display: flex;
+}
+/* the styles for the section */
+section {
+	flex-basis: 100%;
+	padding: 0 2%;
+}
+section h1 {
+	font-size: 200%;
+	padding-top: 1%;
+}
+section img {
+	float: right;
+	margin: 1%;
+	border: 1px solid black;
+}
+figure {
+	float: left;
+	margin: 0 .5%;
+}
+figcaption {
+	display: block;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+/* the styles for the article */
+article {
+	padding: 1% 0;
+}
+article p {
+	padding-bottom: 1%;
+}
+/* the styles for the aside */
+aside {
+	flex-basis: 25%;
+	padding: 1% 0;
+	color: black;
+}
+aside h2{
+	font-size: 125%;
+	margin-top: 3%;
+	padding-bottom: 3%;
+}
+aside ul {
+	margin-left: 4%;
+}
+aside li {
+	padding-bottom: 2%;
+}
+/* the styles for the footer */
+footer {
+	background-image: -moz-linear-gradient(
+		30deg, #ff9b19 0%, #fae279 30%, white 50%, #fae279 80%, #ff9b19 100%
+	);
+	background-image: -webkit-linear-gradient(
+		30deg, #ff9b19 0%, #fae279 30%, white 50%, #fae279 80%, #ff9b19 100%
+	);
+	background-image: -o-linear-gradient(
+		30deg, #ff9b19 0%, #fae279 30%, white 50%, #fae279 80%, #ff9b19 100%
+	);
+	background-image: linear-gradient(
+		30deg, #ff9b19 0%, #fae279 30%, white 50%, #fae279 80%, #ff9b19 100%
+	);
+	clear: both;
+	border-top: 3px solid #d9b99b;
+}
+footer p {
+	text-align: center;
+	color: black;
+	padding: 1%;
+}
+/*  the styles for mobile menu */
+#mobile_menu{ 
+	display: none;
+}
+@media only screen and (max-width: 959px) {
+	section h1 {font-size: 135%;}
+	section h2, aside h2 {font-size: 120%}
+}
+@media only screen and (max-width: 640px) {
+	header img {float: none;}
+	header {text-align: center;}
+	section {
+		float: none;
+		padding-right: 2.5%;
+		width: 100%;
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;
+		width: 100%;
+	}
+	article img {max-width: 30%}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #d9b99b !important;
+	}
+}
+@media only screen and (max-width: 420px) {
+	body { font-size: 90%; }
+}
